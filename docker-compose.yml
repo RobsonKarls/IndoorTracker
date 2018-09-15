@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  indoortracker.api:
+    image: ${DOCKER_REGISTRY}indoortrackerapi
+    build:
+      context: .
+      dockerfile: IndoorTracker.API/Dockerfile
